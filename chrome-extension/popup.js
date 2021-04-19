@@ -16,18 +16,8 @@ thisForm.addEventListener("submit", async function (e) {
     caps = "false";
   }
   var length = formData.get("length");
-  console.log(
-    "https://photocrypthack.herokuapp.com/" +
-      url +
-      "/" +
-      caps +
-      "/" +
-      chars +
-      "/" +
-      length
-  );
   const response = await fetch(
-    "https://photocrypthack.herokuapp.com/" +
+    "https://photocryptapi.herokuapp.com/" +
       url +
       "/" +
       caps +
