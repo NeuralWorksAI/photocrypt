@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "PhotoCrypt",
-  "description": "This extension will convert an image into ASCII.",
+  "description": "Secure accounts with images, not passwords.",
   "version": "1.0",
   "browser_action": {
     "default_popup": "popup.html"

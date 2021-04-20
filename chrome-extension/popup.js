@@ -16,20 +16,16 @@ thisForm.addEventListener("submit", async function (e) {
     caps = "false";
   }
   var length = formData.get("length");
-  const response = await fetch(
-    "https://photocryptapi.herokuapp.com/" +
-      url +
-      "/" +
-      caps +
-      "/" +
-      chars +
-      "/" +
-      length,
-    {
-      mode: "no-cors",
-      method: "GET",
-    }
-  );
+  const response = await fetch("https://photocryptapi.herokuapp.com/", {
+    mode: "no-cors",
+    method: "GET",
+    headers: {
+      url: url,
+      chars: chars,
+      caps: caps,
+      length: length,
+    },
+  });
 
   var x = document.getElementById("optional");
   x.style.display = "none";
